@@ -1,0 +1,26 @@
+GET http://localhost:3000/api/inmuebles
+
+###
+POST http://localhost:3000/api/inmuebles
+Content-Type: application/json
+
+{
+    "floor": 1,
+    "lettre": "A",
+    "metres": 85,
+    "bedrooms": 3,
+    "rent": false,
+    "landlord_name": "Noelia Barrio",
+    "email": "noelia@gmail.com"
+}
+
+###
+PUT http://localhost:3000/api/inmuebles/645e74fa5889134b311e843f
+Content-Type: application/json
+
+{
+    "rent": true
+}
+
+###
+DELETE http://localhost:3000/api/inmuebles/645e74fa5889134b311e843f
